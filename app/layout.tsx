@@ -17,6 +17,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <ClerkProvider>
       <html lang="en" className="dark" style={{ colorScheme: "dark" }}>
+      <link rel="icon" href="/favicon.png" type="image/png"/>
         <body className={inter.className}>
           <Toaster richColors position='bottom-right' />
           <RootProviders>{children}</RootProviders>
